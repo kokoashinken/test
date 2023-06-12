@@ -1,0 +1,19 @@
+def fibonacci(n):
+    # フィボナッチ数列の最初の2つの要素を設定
+    fib = [0, 1]
+
+    # nが0または1の場合、そのまま返す
+    if n < 2:
+        return fib[:n+1]
+
+    # フィボナッチ数列の要素を生成
+    while len(fib) <= n:
+        next_num = fib[-1] + fib[-2]
+        fib.append(next_num)
+
+    return fib
+
+# フィボナッチ数列の最初の10個の要素を表示
+n = 10
+result = fibonacci(n)
+print(result)

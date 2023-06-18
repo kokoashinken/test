@@ -1,5 +1,6 @@
 //課題
 //2020/04/17
+//orehvioevieieibmjik
 
 #include <curses.h>
 
